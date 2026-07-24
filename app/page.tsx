@@ -13,7 +13,7 @@ export default function Home() {
           {/* <EmojiFace /> */}
           <div className="hero-content">
             <h1>Hi There!</h1>
-            <p>This is my page. It's already been released, but it's still possible to add new things. Minimalism, I said.</p>
+            <p>This is Nisr's Page. It's already been released, but it's still possible to add new things. Minimalism, I said.</p>
           </div>
         </section>
 
