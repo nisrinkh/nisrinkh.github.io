@@ -26,7 +26,7 @@ ul {
 ul li {
     display: inline-block;
     margin: 10px 70px;
-    font-size: 18px;
+    font-size: 17px;
     cursor: pointer;
 }
 
@@ -50,8 +50,8 @@ a { text-decoration: none; color: inherit; }
     border: 0;
     outline: 0;
     color: #fff;
-    font-size: 18px;
-    font-family: var(--font-elma-sans);
+    font-size: 15px;
+    font-family: var(--font-jetbrains-mono);
     max-width: 200px;
 }
 
@@ -90,4 +90,73 @@ a { text-decoration: none; color: inherit; }
 
 .dark .navbar ul li a:hover {
   color: #dead34;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 4%;
+  }
+
+  ul li {
+    margin: 10px 30px;
+    font-size: 15px;
+  }
+
+  .search-box input {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px 5%;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 40px;
+  }
+
+  ul {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  ul li {
+    margin: 8px 15px;
+    font-size: 14px;
+  }
+
+  .search-box {
+    order: 2;
+    padding: 8px 15px;
+  }
+
+  .search-box input {
+    max-width: 120px;
+    font-size: 13px;
+  }
+
+  .search-icon {
+    width: 20px;
+  }
+
+  .toggle-icon {
+    width: 30px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  ul li {
+    margin: 6px 10px;
+    font-size: 13px;
+  }
+
+  .search-box {
+    display: none;
+  }
 }

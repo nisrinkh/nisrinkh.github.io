@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import Navbar from './components/navbar/navbar';
-import EmojiFace from './components/eyes/emojiface';
-import { useEyeFollow } from './components/eyes/eyefollow';
+/* import EmojiFace from './components/eyes/emojiface';
+import { useEyeFollow } from './components/eyes/eyefollow'; */
 import Footer from './components/footer/footer';
 
 interface ThemeWrapperProps {
@@ -11,7 +11,7 @@ interface ThemeWrapperProps {
 }
 
 export default function ThemeWrapper({ children }: ThemeWrapperProps) {
-  useEyeFollow();
+  /* useEyeFollow(); */
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const [isMounted, setIsMounted] = useState(false);
 
