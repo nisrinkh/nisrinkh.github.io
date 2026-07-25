@@ -29,10 +29,12 @@ const Navbar = ({ theme, setTheme }: NavbarProps) => {
         <li><a href="#skills">Skills & Tools</a></li>
         <li><a href="#findme">Find Me</a></li>
       </ul>
+      {/* 
       <div className='search-box'>
         <input type="text" placeholder='Search...' />
         <img src={theme == 'light' ? search_day.src : search_night.src} className="search-icon" alt="Search" /> 
       </div>
+      */}
       
       <img 
         onClick={toggle_mode} 

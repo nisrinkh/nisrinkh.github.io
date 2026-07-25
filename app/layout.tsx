@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Chango, Chewy, Instrument_Serif, Elms_Sans, JetBrains_Mono, Geist, Geist_Mono } from "next/font/google";
+import { Chango, Chewy, Instrument_Serif, JetBrains_Mono, Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
@@ -17,12 +17,6 @@ const chewy = Chewy ({
   variable: "--font-chewy",
   subsets: ["latin"],
   weight: "400"
-});
-
-const elmsSans = Elms_Sans ({
-  variable: "--font-elms-sans",
-  subsets: ["latin"],
-  weight: "500"
 });
 
 const chango = Chango ({
@@ -61,7 +55,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body 
-        className={`${chewy.variable} ${elmsSans.variable} ${chango.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable}`}
+        className={`${chewy.variable} ${chango.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable}`}
         suppressHydrationWarning
       >
         <div className='container'>
