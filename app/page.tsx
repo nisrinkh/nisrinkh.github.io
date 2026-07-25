@@ -40,9 +40,9 @@ export default function Home() {
           <div className="hero-content">
             <div className="big-title">Hi There!</div>
             <p className="subtitle">This is Nisr's Page.</p>
-            <p className="sub-subtitle">
-              Just a uni student majoring in Informatics Engineering.
-            </p>
+            <p className="sub-subtitle">Just an uni student majoring in Informatics Engineering.</p>
+            <p className='sub-subtitle'>Gaining experience through projects.</p>
+            <p className='sub-sub-subtitle'>Junior Software Developer ❤️ Web Developer ❤️ Designer ❤️ Illustrator</p>
           </div>
         </section>
 

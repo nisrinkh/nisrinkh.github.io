@@ -13,7 +13,8 @@
 }
 
 .dark {
-  --bg-primary: #0F292A;
+  /* --bg-primary: #0F292A; */
+  background-image: url('./components/assets/bg-minim-noise-dark.png');
   --text-primary: #ffffff;
   --bg-section: #333333;
 }
@@ -28,6 +29,26 @@ body {
 }
 
 .container {
+  background-image: url('./components/assets/bg-noise-25.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: visible;
+  background-color: var(--bg-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container .dark {
+  background-image: url('./components/assets/bg-minim-noise-dark.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
   width: 100vw;
   min-height: 100vh;
   overflow: visible;
@@ -114,6 +135,23 @@ h1 {
   font-style: italic;
 }
 
+.sub-subtitle {
+  font-family: var(--font-jetbrains-mono);
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.sub-sub-subtitle {
+  font-family: var(--font-instrument-serif);
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-top: 10px;
+  letter-spacing: 2.5px;
+}
+
 h2 {
   font-family: var(--font-instrument-serif);
 }
@@ -131,14 +169,6 @@ h2 {
 .penjelasan {
   font-size: 16px;
   margin-bottom: 20px;
-}
-
-.sub-subtitle {
-  font-family: var(--font-jetbrains-mono);
-  font-size: 16px;
-  margin-bottom: 20px;
-  text-align: left;
-  margin-top: 10px;
 }
 
 .section-logo {
@@ -249,6 +279,16 @@ h2 {
 }
 
 .logo-app-mod-csharp-greenfoot:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+}
+
+.logo-app-mod-xampp:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+}
+
+.logo-app-mod-nodejs:hover {
   transform: scale(1.2);
   filter: grayscale(0%);
 }
