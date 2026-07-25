@@ -20,7 +20,7 @@ const Footer = ({theme, setTheme}: FooterProps) => {
         <div className='footer'>
             <ul>
                 <li><a href="/">Back to Top</a></li>
-                <p>Let's follow your dream like those eyes that follows the pointer! Sincerely by N, with ❤️. &copy; {new Date().getFullYear()} All rights reserved.</p>
+                <p>follow your dreams! Sincerely by N, with ❤️. &copy; {new Date().getFullYear()} All rights reserved.</p>
             </ul>
             <img onClick={toggle_mode}
             src={theme == 'light' ? toggle_light.src : toggle_dark.src} 
