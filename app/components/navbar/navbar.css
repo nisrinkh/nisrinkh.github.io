@@ -21,11 +21,14 @@ ul {
     flex: 1;
     list-style: none;
     text-align: center;
+    display: flex;          
+    justify-content: center; 
+    gap: 30px;              
+    margin: 0;   
 }
 
 ul li {
     display: inline-block;
-    margin: 10px 70px;
     font-size: 17px;
     cursor: pointer;
 }
@@ -55,14 +58,19 @@ a { text-decoration: none; color: inherit; }
     max-width: 200px;
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .toggle-icon {
     width: 35px;
     cursor: pointer;
-    margin-left: 40px;
 }
 
 .dark .navbar {
-    background: #000000;
+    background: var(--bg-primary);
     color: #fff;
 }
 
@@ -90,6 +98,16 @@ a { text-decoration: none; color: inherit; }
 
 .dark .navbar ul li a:hover {
   color: #dead34;
+}
+
+@media (max-width: 1170px) {
+  ul {
+    gap:15px;
+  }
+  ul li {
+    margin: 10px 25px; 
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -150,13 +168,86 @@ a { text-decoration: none; color: inherit; }
   }
 }
 
-@media (max-width: 480px) {
-  ul li {
-    margin: 6px 10px;
-    font-size: 13px;
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 1001;
+  padding: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-primary);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 5%;
+    justify-content: space-between;
+  }
+
+  .nav-actions {
+    gap: 10px;
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   .search-box {
-    display: none;
+    display: none; 
+  }
+
+  .toggle-icon {
+    width: 30px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-section);
+    color: var(--text-primary);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2); 
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    display: none; 
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    display: block; 
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links li a {
+    font-size: 18px;
+    display: block;
+    padding: 10px;
   }
 }

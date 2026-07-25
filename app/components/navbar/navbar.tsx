@@ -1,4 +1,6 @@
-import React from "react";
+'use client';
+
+import React, { useState } from "react";
 import "./navbar.css";
 
 import tulip from "../assets/tulip.png";
@@ -15,19 +17,23 @@ interface NavbarProps {
 
 
 const Navbar = ({ theme, setTheme }: NavbarProps) => {
-  
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggle_mode = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light');        
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
     <div className='navbar'>
       <img src={tulip.src} alt="Logo" className='logo' />
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills & Tools</a></li>
-        <li><a href="#findme">Find Me</a></li>
+      <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+        <li><a href="#home" onClick={closeMenu}>Home</a></li>
+        <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
+        <li><a href="#skills" onClick={closeMenu}>Skills & Tools</a></li>
+        <li><a href="#findme" onClick={closeMenu}>Find Me</a></li>
       </ul>
       {/* 
       <div className='search-box'>
@@ -35,13 +41,23 @@ const Navbar = ({ theme, setTheme }: NavbarProps) => {
         <img src={theme == 'light' ? search_day.src : search_night.src} className="search-icon" alt="Search" /> 
       </div>
       */}
-      
-      <img 
-        onClick={toggle_mode} 
-        src={theme == 'light' ? toggle_light.src : toggle_dark.src} 
-        alt="Toggle Light" 
-        className='toggle-icon' 
-      />
+      <div className='nav-actions'>
+        <img 
+          onClick={toggle_mode} 
+          src={theme == 'light' ? toggle_light.src : toggle_dark.src} 
+          alt="Toggle Light" 
+          className='toggle-icon' 
+        />
+
+        <div 
+            className={`hamburger ${isMenuOpen ? 'open' : ''}`} 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+      </div>
     </div>
   );
 }

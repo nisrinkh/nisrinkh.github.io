@@ -13,7 +13,7 @@
 }
 
 .dark {
-  /* --bg-primary: #0F292A; */
+  --bg-primary: #0F292A;
   background-image: url('./components/assets/bg-minim-noise-dark.png');
   --text-primary: #ffffff;
   --bg-section: #333333;
