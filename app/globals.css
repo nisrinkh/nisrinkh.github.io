@@ -154,6 +154,7 @@ h1 {
 
 h2 {
   font-family: var(--font-instrument-serif);
+  font-size: 30px;
 }
 
 .project-image {
@@ -162,7 +163,7 @@ h2 {
   margin-left: auto;           
   margin-right: auto;  
   margin-bottom: 10px;          
-  width: 50%; 
+  width: 80%; 
   height: auto;
 }
 
@@ -311,4 +312,10 @@ h2 {
   h1 {
     font-size: 40px;
   }
+
+  h2 {
+  font-family: var(--font-instrument-serif);
+  font-size: 30px;
+  text-align: center;
+}
 }

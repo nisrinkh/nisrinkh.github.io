@@ -31,10 +31,17 @@ const Navbar = ({ theme, setTheme }: NavbarProps) => {
       <img src={tulip.src} alt="Logo" className='logo' />
       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <li><a href="#home" onClick={closeMenu}>Home</a></li>
-        <li><a href="#projects" onClick={closeMenu}>Projects</a></li>
-        <li><a href="#skills" onClick={closeMenu}>Skills & Tools</a></li>
-        <li><a href="#findme" onClick={closeMenu}>Find Me</a></li>
-      </ul>
+        <li className="dropdown">
+          <a href="#projects">Projects ▾</a>
+          <ul className="dropdown-menu">
+            <li><a href="#webdev" onClick={closeMenu}>Web Development Projects</a></li>
+            <li><a href="#gamedev" onClick={closeMenu}>Game Development Projects</a></li>
+            <li><a href="#illust" onClick={closeMenu}>Illustration Project</a></li>
+          </ul>
+          </li>
+            <li><a href="#skills" onClick={closeMenu}>Skills & Tools</a></li>
+            <li><a href="#findme" onClick={closeMenu}>Find Me</a></li>
+          </ul>
       {/* 
       <div className='search-box'>
         <input type="text" placeholder='Search...' />

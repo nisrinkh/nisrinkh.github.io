@@ -29,6 +29,12 @@ import typescriptlogo from "./components/assets/ts-logo.png";
 import reactlogo from "./components/assets/react-logo.png";
 import jslogo from "./components/assets/js-logo.png";
 
+import dashboardimg from "./components/assets/dashboard.png";
+import dashbo from "./components/assets/dashboard-sudah-login.png";
+import illust from "./components/assets/illust.png";
+import landingpg from "./components/assets/landing-page-berkah.png";
+import catalog from "./components/assets/catalog2.png";
+
 
 export default function Home() {
   return (
@@ -42,36 +48,77 @@ export default function Home() {
             <p className="subtitle">This is Nisr's Page.</p>
             <p className="sub-subtitle">Just an uni student majoring in Informatics Engineering.</p>
             <p className='sub-subtitle'>Gaining experience through projects.</p>
-            <p className='sub-sub-subtitle'>Junior Software Developer ❤️ Web Developer ❤️ Designer ❤️ Illustrator</p>
+            <p className='sub-sub-subtitle'>Junior Software Developer ❤️ Web Developer ❤️ Designer ❤️ Illustrator ❤️ Amateur Game Developer</p>
           </div>
         </section>
 
         <section id="projects" className="section-container">
           <h1>Projects</h1>
-          <p className="penjelasan">
-            <img src= {pickpass_image.src} alt="Ilustrasi Pick Pass Game" className="project-image" />
-            <u><a href="https://www.greenfoot.org/scenarios/35001" target="_blank">Pick Pass Game</a></u>
-          </p>
-          <p className="penjelasan">
-            To see my Pick Pass Game, click "Pick Pass Game" above. </p>
-          <p className="penjelasan">
-            This game was built entirely with <u><a href="https://www.java.com/en/" target="_blank">Java</a></u> in <u><a href="https://www.greenfoot.org/" target="_blank">Greenfoot</a></u> platform with over 1000 views in the platform. I designed the characters myself with <u><a href="https://ibispaint.com" target="_blank">IbisPaint</a></u>. 
-          </p>  
-          <p className="penjelasan">
-            This is an educational game. Players are asked to guide the main character to find trash. Once the player has collected the required amount of trash, they can move on to the next level. This game has two levels. At the end, a bus (BST) will arrive to pick up the character, and the player is declared the winner.
-          </p>
-          <br></br>
 
-          <p>
-            <img src= {rpg.src} alt="Ilustrasi Unity RPG Game" className="project-image" />
-          </p>
-          <p className="penjelasan">
-            <u><a href="https://github.com/nisrinkh/farm-fun-rpg-old-assignment" target="_blank">Farm Fun Game on GitHub</a></u>
-          </p>
-          <p className="penjelasan">
-            This game was built with Unity and C#. Top-Down, 2D RPG game. Players are asked to collect the scattered tomato seeds. For every packet of tomato seeds successfully collected, the player earns 10 points. The maximum  number of points is 120.
-          </p>
+          <section id="webdev" className="section-container">
+            <h2>Web Development</h2>
+            <p className="penjelasan">
+              <img src= {dashboardimg.src} alt="Dashboard Admin Login Page" className="project-image" />
+              <img src= {dashbo.src} alt="Dashboard Admin After Log In" className="project-image" />
+              <u><a href="https://github.com/arthasrgh/pbl-chatbot" target="_blank">Admin Dashboard on GitHub</a></u>
+            </p>
+            <p className="penjelasan">Collaborated on the development of an admin dashboard for Project-Based Learning in my 4th semester. This project was built using Laravel, Vue.js, and MySQL. 
+              The dashboard was connected to a chatbot database.</p>
+            <p className="penjelasan">I designed the UI/UX prototype and built the frontend. In addition, I conducted various tests with Postman for API Testing, Playwright and Vitest for automation flow testing and integration testing to ensure assesibility and performance, with overall score of 90% on <u><a href="https://developer.chrome.com/docs/lighthouse" target= "_blank">Google Lighthouse</a></u>.</p>
+
+            <p className="penjelasan">
+              <img src= {landingpg.src} alt="Landing Page Website Berkah Onderdil (Spare Parts E-Commerce)" className="project-image" />
+              <img src= {catalog.src} alt="Catalog Page Website Berkah Onderdil (Spare Parts E-Commerce)" className="project-image" />
+            </p>
+            <p className="penjelasan">
+              Private GitHub repository, the link cannot be included here.
+            </p>
+            <p className="penjelasan">
+              Collaborated on the development of an e-commerce website for auto parts, featuring over 25 products. The website was built using Laravel, Vue.js, and MySQL.
+            </p>
+            <p className="penjelasan">
+            I designed the UI/UX prototype and built the frontend. 
+            In addition, I built a dynamic shopping cart and checkout feature using Laravel RESTful API, with state management handled by Pinia. 
+            The shopping cart is directly linked to the logged-in user's account.
+            </p>
+          </section>
+
+          <section id="gamedev" className="section-container">
+            <h2>a little bit of Game Development...</h2>
+            <p className="penjelasan">
+              <img src= {pickpass_image.src} alt="Pick Pass Game Welcome Page" className="project-image" />
+              <u><a href="https://www.greenfoot.org/scenarios/35001" target="_blank">Pick Pass Game</a></u>
+            </p>
+            <p className="penjelasan">
+              To see my Pick Pass Game, click "Pick Pass Game" above. </p>
+            <p className="penjelasan">
+              This game was built entirely with <u><a href="https://www.java.com/en/" target="_blank">Java</a></u> in <u><a href="https://www.greenfoot.org/" target="_blank">Greenfoot</a></u> platform with over 1000 views in the platform. I designed the characters myself with <u><a href="https://ibispaint.com" target="_blank">IbisPaint</a></u>. 
+            </p>  
+            <p className="penjelasan">
+              This is an educational game. Players are asked to guide the main character to find trash. Once the player has collected the required amount of trash, they can move on to the next level. This game has two levels. At the end, a bus (BST) will arrive to pick up the character, and the player is declared the winner.
+            </p>
+            <br></br>
+
+            <p>
+              <img src= {rpg.src} alt="Unity RPG Game Farm Fun, by me" className="project-image" />
+            </p>
+            <p className="penjelasan">
+              <u><a href="https://github.com/nisrinkh/farm-fun-rpg-old-assignment" target="_blank">Farm Fun Game on GitHub</a></u>
+            </p>
+            <p className="penjelasan">
+              This game was built with Unity and C#. Top-Down, 2D RPG game. Players are asked to collect the scattered tomato seeds. For every packet of tomato seeds successfully collected, the player earns 10 points. The maximum  number of points is 120.
+            </p>
+            <p className="penjelasan">Shoutout to <u><a href="https://youtube.com/@gamedevwithjacquelynnehei465?si=MtA4jA9qkzNjvmb3" target="_blank">Game Dev with JacquelynneHei</a></u> for providing a comprehensive tutorial on how to build this game. The tutorial is in this YouTube playlist <u><a href="https://youtube.com/playlist?list=PL4PNgDjMajPN51E5WzEi7cXzJ16BCHZXl&si=Z7gm9YJIeJ6MC7KT" target="_blank">Farming RPG</a></u>.</p>
+          </section>
         </section>
+
+        <section id="illust" className="section-container">
+            <h2>Ilustration</h2>
+            <p className="penjelasan">
+              <img src= {illust.src} alt="My illustration for a children book" className="project-image" />
+            </p>
+            <p className="penjelasan">Creating illustrations for a children's book. Drawn entirely using Krita.</p>
+          </section>
 
         <section id="skills" className="section-container">
           <h1>Skills & Tools</h1>
@@ -183,8 +230,8 @@ export default function Home() {
 
         <section id="findme" className="section-container">
           <h1>Find Me</h1>
-          <p>Find me on GitHub: <u><a href="https://github.com/nisrinkh" target="_blank">https://github.com/nisrinkh</a></u></p>
-          <p>Find me on LinkedIn: <u><a href="https://linkedin.com/in/nisrina-ks" target="_blank">https://linkedin.com/in/</a></u></p>
+          <p className="penjelasan">Find me on GitHub: <u><a href="https://github.com/nisrinkh" target="_blank">https://github.com/nisrinkh</a></u></p>
+          <p className="penjelasan">Find me on LinkedIn: <u><a href="https://linkedin.com/in/nisrina-ks" target="_blank">https://linkedin.com/in/</a></u></p>
         </section>
       </ThemeWrapper>
     </main>
