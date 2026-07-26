@@ -32,7 +32,7 @@ const Navbar = ({ theme, setTheme }: NavbarProps) => {
       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
         <li><a href="#home" onClick={closeMenu}>Home</a></li>
         <li className="dropdown">
-          <a href="#projects">Projects ▾</a>
+          <a href="#projects" onClick={closeMenu}>Projects ▾</a>
           <ul className="dropdown-menu">
             <li><a href="#webdev" onClick={closeMenu}>Web Development Projects</a></li>
             <li><a href="#gamedev" onClick={closeMenu}>Game Development Projects</a></li>

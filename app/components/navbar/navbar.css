@@ -294,9 +294,8 @@ a { text-decoration: none; color: inherit; }
   }
 
   .nav-links li a {
-    font-size: 18px;
+    font-size: 16px;
     display: block;
-    padding: 10px;
   }
 
     .dropdown-menu {
@@ -320,5 +319,17 @@ a { text-decoration: none; color: inherit; }
   .dropdown-menu li a {
     font-size: 15px;
     padding: 0px 0;
+  }
+
+  @media (max-width: 480px) {
+  .toggle-icon {
+    width: 25px;
+    cursor: pointer;
+  }
+
+  .dropdown-menu li a {
+    font-size: 15px;
+    padding: 0px 0;
+  }
   }
 }

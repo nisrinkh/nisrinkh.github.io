@@ -48,9 +48,9 @@ export default function Home() {
           <div className="hero-content">
             <div className="big-title">Hi There!</div>
             <p className="subtitle">This is Nisr's Page.</p>
-            <p className="sub-subtitle">Just an uni student majoring in Informatics Engineering.</p>
-            <p className='sub-subtitle'>Gaining experience through projects.</p>
-            <p className='sub-sub-subtitle'>Junior Software Developer • Web Developer • Designer • Illustrator • Amateur Game Developer</p>
+            <p className="sub-subtitle">Just a uni student majoring in Informatics Engineering.</p>
+            <p className='sub-subtitle'>Slowly but surely, I'm gaining experience through various projects. See you on the next project!</p>
+            <p className='sub-sub-subtitle'>Junior Software Developer • Web Developer • Designer • Illustrator</p>
           </div>
         </section>
 
@@ -66,21 +66,20 @@ export default function Home() {
             </p>
             <p className="penjelasan">Collaborated on the development of an admin dashboard for Project-Based Learning in my 4th semester. This project was built using Laravel, Vue.js, and MySQL. 
               The dashboard was connected to a chatbot database.</p>
-            <p className="penjelasan">I designed the UI/UX prototype and built the frontend. In addition, I conducted various tests using Postman for API Testing, Playwright and Vitest for automation flow testing and integration testing to ensure assesibility and performance, with overall score of 90% on <u><a href="https://developer.chrome.com/docs/lighthouse" target= "_blank">Google Lighthouse</a></u>.</p>
+            <p className="penjelasan">I built the frontend and designed the UI/UX prototype. In addition, I conducted various tests using Postman for API Testing, Playwright and Vitest for automation flow testing and integration testing to ensure assesibility and performance, with overall score of 90% on <u><a href="https://developer.chrome.com/docs/lighthouse" target= "_blank">Google Lighthouse</a></u>.</p>
 
             <p className="penjelasan">
               <img src= {landingpg.src} alt="Landing Page Website Berkah Onderdil (Spare Parts E-Commerce)" className="project-image" />
               <img src= {catalog.src} alt="Catalog Page Website Berkah Onderdil (Spare Parts E-Commerce)" className="project-image" />
             </p>
             <p className="penjelasan">
-              Private GitHub repository, the link cannot be included here.
+              <em>Private GitHub repository, the link cannot be included here.</em>
             </p>
             <p className="penjelasan">
               Collaborated on the development of an e-commerce website for auto parts, featuring over 25 products. The website was built using Laravel, Vue.js, and MySQL.
             </p>
             <p className="penjelasan">
-            I designed the UI/UX prototype and built the frontend. 
-            In addition, I built a dynamic shopping cart and checkout feature using Laravel RESTful API, with state management handled by Pinia. 
+            I built the frontend, designed the UI/UX prototype, and built a dynamic shopping cart and checkout feature using Laravel RESTful API, with state management handled by Pinia. 
             The shopping cart is directly linked to the logged-in user's account.
             </p>
           </section>
