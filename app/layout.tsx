@@ -38,7 +38,7 @@ const jetbrainsMono = JetBrains_Mono ({
 });
 
 export const metadata: Metadata = {
-  title: "My Playground",
+  title: "Nisr's Portfolio",
   description: "It's Me!",
 };
 
