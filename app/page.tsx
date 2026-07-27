@@ -1,6 +1,4 @@
 import ThemeWrapper from './themewrapper';
-/*import EmojiFace from './components/eyes/emojiface';
-import { useEyeFollow } from './components/eyes/eyefollow'; */
 import pickpass_image from "./components/assets/pickpass.png";
 import rpg from "./components/assets/unityrpg.png";
 import figma from "./components/assets/figma.png";
