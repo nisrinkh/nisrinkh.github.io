@@ -17,27 +17,35 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm run build
 
     - name: Install dependencies
       run: npm install
+
+    - name: Verifiy Next.js installed
+      run: npx next --version
+
+    - name: build Next.js
+      run: npm run build
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v7
       with:
         path: ./out
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy
+deploy:
+  runs-on: ubuntu-latest
+  needs: build
+  steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
 
 
