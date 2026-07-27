@@ -42,6 +42,5 @@ next-env.d.ts
 AGENTS.md
 CLAUDE.md
 eslint.config.mjs
-next.config.ts
 tsconfig.json
 package-lock.json
