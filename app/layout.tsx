@@ -39,7 +39,7 @@ const jetbrainsMono = JetBrains_Mono ({
 
 export const metadata: Metadata = {
   title: "Nisr's Portfolio",
-  description: "It's Me!",
+  description: "It's my portfolio!",
 };
 
 export default function RootLayout({
