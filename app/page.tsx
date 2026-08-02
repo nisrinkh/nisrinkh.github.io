@@ -73,6 +73,54 @@ export default function Home() {
 
         <section id="skills" className="section-container">
         <h1>Skills and Tools</h1>
+          <h2>Web Development</h2>
+          <div className="section-logo">
+            <p className="penjelasan">
+              <a href="https://html.spec.whatwg.org/multipage/introduction.html" target="_blank">
+              <img src= {html.src} alt="Logo HTML" className="logo-app-mod-html" />
+              </a>
+              <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">
+              <img src= {csslogo.src} alt="Logo CSS" className="logo-app-mod-css" />
+              </a>
+              <a href="https://www.java.com/en/" target="_blank">
+              <img src= {javalogo.src} alt="Logo Java" className="logo-app-mod" />
+              </a>
+              <a href="https://www.php.net/" target="_blank">
+              <img src= {phplogo.src} alt="Logo PHP" className="logo-app" />
+              </a>
+              <a href="https://ecma-international.org/publications-and-standards/standards/ecma-262/" target="_blank">
+              <img src= {jslogo.src} alt="Logo JavaScript" className="logo-app-mod-css" />
+              </a>
+              <a href="https://www.typescriptlang.org/" target="_blank">
+              <img src= {typescriptlogo.src} alt="Logo TypeScript" className="logo-app" />
+              </a>
+              <a href="https://www.mysql.com/" target="_blank">
+              <img src= {mysqllogo.src} alt="Logo MySQL" className="logo-app-mod" />
+              </a>
+              <a href="https://www.apachefriends.org/" target="_blank">
+              <img src= {xampplogo.src} alt="Logo XAMPP" className="logo-app-mod-xampp" />
+              </a>
+              <a href="https://nodejs.org/en" target="_blank">
+              <img src= {nodejslogo.src} alt="Logo Node.js" className="logo-app-mod-nodejs" />
+              </a>
+            </p>
+          </div>
+
+            <h2>Game Development</h2>
+            <div className="section-logo">
+              <p className="penjelasan">
+                <a href="https://unity.com/" target="_blank">
+                <img src= {unity.src} alt="Logo Unity" className="logo-app-mod" />
+                </a>
+                <a href="https://dotnet.microsoft.com/en-us/languages/csharp" target="_blank">
+                <img src= {csharp.src} alt="Logo C#" className="logo-app-mod-csharp-greenfoot" />
+                </a>
+                <a href="https://www.greenfoot.org/" target="_blank">
+                <img src= {greenfoot.src} alt="Logo Greenfoot" className="logo-app-mod-csharp-greenfoot" />
+                </a>
+              </p>
+            </div>
+          
           <h2>Frameworks</h2>
             <div className="section-logo">
               <p className="penjelasan">
