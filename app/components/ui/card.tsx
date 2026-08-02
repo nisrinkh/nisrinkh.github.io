@@ -1,7 +1,7 @@
-import React from 'react';
+'use client';
+import React, { useState } from 'react';
 import './card.css';
 
-// 1. Definisikan "bentuk" data yang akan diterima card ini
 interface ProjectCardProps {
   title: string;
   description: React.ReactNode;
@@ -11,6 +11,8 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ title, description, imageSrc, link, tags }: ProjectCardProps) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  
   return (
     <div className="project-card">
       {imageSrc && (
@@ -22,9 +24,18 @@ const ProjectCard = ({ title, description, imageSrc, link, tags }: ProjectCardPr
         <div className="card-title">
           <h3>{title}</h3>
         </div>
-        <div className="card-desc">
+
+        <div className={`card-desc ${isExpanded ? 'expanded' : 'collapsed'}`}>
         <p>{description}</p>
         </div>
+        <button 
+          className="expand-btn" 
+          onClick={() => setIsExpanded(!isExpanded)}
+          aria-expanded={isExpanded}
+        >
+          {isExpanded ? 'See Less' : 'See More'}
+        </button>
+
         {tags && tags.length > 0 && (
           <div className="card-tags">
             {tags.map((tag, index) => (
